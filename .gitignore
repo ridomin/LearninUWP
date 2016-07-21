@@ -2,6 +2,7 @@ obj/
 bin/
 .vs/
 AppPackages/
+BundleArtifacts/
 *.lock.json
 *.user
 *.suo

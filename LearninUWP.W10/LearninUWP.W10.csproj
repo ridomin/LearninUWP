@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
-
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
@@ -20,10 +19,14 @@
     <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <NuGetPackageImportStamp />
     <RestorePackages>true</RestorePackages>
-	<UapDefaultAssetScale>200</UapDefaultAssetScale>	
-	<UseDotNetNativeSharedAssemblyFrameworkPackage>True</UseDotNetNativeSharedAssemblyFrameworkPackage>
+    <UapDefaultAssetScale>200</UapDefaultAssetScale>
+    <UseDotNetNativeSharedAssemblyFrameworkPackage>True</UseDotNetNativeSharedAssemblyFrameworkPackage>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <AppxBundle>Always</AppxBundle>
+    <AppxBundlePlatforms>x86|x64|arm</AppxBundlePlatforms>
+    <PackageCertificateThumbprint>438290E00C602CE0AD6A8F83AC65360E9DE0A3C2</PackageCertificateThumbprint>
+    <PackageCertificateKeyFile>LearninUWP.W10_StoreKey.pfx</PackageCertificateKeyFile>
   </PropertyGroup>
-
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>bin\ARM\Debug\</OutputPath>
@@ -93,7 +96,6 @@
     <Prefer32Bit>true</Prefer32Bit>
     <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
   </PropertyGroup>
-
   <ItemGroup>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
@@ -103,13 +105,11 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
   </ItemGroup>
-
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
   </ItemGroup>
-
   <ItemGroup>
     <Page Include="Layouts\List\ListBigHorizontalCardBox.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -300,7 +300,6 @@
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
-
   <ItemGroup>
     <Compile Include="Layouts\List\ListBigHorizontalCardBox.xaml.cs">
       <DependentUpon>ListBigHorizontalCardBox.xaml</DependentUpon>
@@ -420,11 +419,10 @@
       <DependentUpon>ShellPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
-
   <ItemGroup>
+    <None Include="LearninUWP.W10_StoreKey.pfx" />
     <None Include="project.json" />
   </ItemGroup>
-
   <ItemGroup>
     <Compile Include="Sections\_ActionConfig.cs" />
     <Compile Include="Sections\_PageConfig.cs" />
@@ -476,104 +474,102 @@
     <Compile Include="Sections\SessionsSection.Related.cs" />
     <Compile Include="Sections\SpeakersSection.Related.cs" />
   </ItemGroup>
-
   <ItemGroup>
-        <Content Include="Layouts\Detail\MulticolumnLayout.json" />
-          <Content Include="Layouts\Detail\TextDetailLayout.json" />
-          <Content Include="Layouts\List\Breakpoints.Large.ContactCard.json" />
-          <Content Include="Layouts\List\Breakpoints.Large.json" />
-          <Content Include="Layouts\List\Breakpoints.Large.ListBigHorizontalCard.json" />
-          <Content Include="Layouts\List\Breakpoints.Large.ListBigHorizontalCardBox.json" />
-          <Content Include="Layouts\List\Breakpoints.Medium.json" />
-          <Content Include="Layouts\List\Breakpoints.Medium.ListBigVerticalCard.json" />
-          <Content Include="Layouts\List\Breakpoints.Medium.ListBigVerticalCardBox.json" />
-          <Content Include="Layouts\List\Breakpoints.Medium.MenuBig.json" />
-          <Content Include="Layouts\List\Breakpoints.Medium.MenuMedium.json" />
-          <Content Include="Layouts\List\Breakpoints.Medium.MenuSmall.json" />
-          <Content Include="Layouts\List\Breakpoints.Medium.MenuText.json" />
-          <Content Include="Layouts\List\Breakpoints.Medium.Photo.json" />
-          <Content Include="Layouts\List\Breakpoints.Medium.ListTextCard.json" />
-          <Content Include="Layouts\List\Breakpoints.ListGrouped.json" />
-          <Content Include="Layouts\List\Breakpoints.Large.ListBigHorizontalCardGroupedHome.json" />
-          <Content Include="Assets\Design\DesignData.json" />
-          <Content Include="Assets\Design\DesignDataHtml.json" />
-          <Content Include="Assets\Design\DesignDataMenu.json" />
-          <Content Include="Assets\Design\DesignDataTD.json" />
-          <Content Include="Assets\Design\DetailDesignData.json" />
-          <Content Include="Assets\Design\DarkGray.png" />
-          <Content Include="Assets\Design\LightGray.png" />
-          <Content Include="Assets\Design\MediumGray.png" />
-          <Content Include="Assets\about.png" />
-          <Content Include="Assets\RelatedContentVBP.json" />
-          <Content Include="Properties\Default.rd.xml" />
-          <Content Include="Assets\ApplicationLogo.png" />
-          <Content Include="Assets\SplashScreen.scale-200.png" />
-          <Content Include="Assets\Square150x150Logo.scale-200.png" />
-          <Content Include="Assets\Square310x310Logo.scale-200.png" />
-          <Content Include="Assets\Square44x44Logo.scale-200.png" />
-          <Content Include="Assets\Square71x71Logo.scale-200.png" />
-          <Content Include="Assets\StoreLogo.scale-200.png" />
-          <Content Include="Assets\Wide310x150Logo.scale-200.png" />
-          <Content Include="Assets\Data\Gallery.json" />
-          <Content Include="Assets\Data\Information.json" />
-          <Content Include="Assets\Data\PressRelease.htm" />
-          <Content Include="Assets\Data\Sessions.json" />
-          <Content Include="Assets\Data\Speakers.json" />
-          <Content Include="Assets\DataImages\02ffabbe-cac8-e411-b.jpg" />
-          <Content Include="Assets\DataImages\1-2.png" />
-          <Content Include="Assets\DataImages\1.jpg" />
-          <Content Include="Assets\DataImages\14.png" />
-          <Content Include="Assets\DataImages\2.jpg" />
-          <Content Include="Assets\DataImages\2.png" />
-          <Content Include="Assets\DataImages\3.jpg" />
-          <Content Include="Assets\DataImages\3.png" />
-          <Content Include="Assets\DataImages\4.png" />
-          <Content Include="Assets\DataImages\41f54bba-b9c9-e411-b.jpg" />
-          <Content Include="Assets\DataImages\5.png" />
-          <Content Include="Assets\DataImages\6.jpg" />
-          <Content Include="Assets\DataImages\7.jpg" />
-          <Content Include="Assets\DataImages\9.jpg" />
-          <Content Include="Assets\DataImages\904dedef-4acb-43bc-b.png" />
-          <Content Include="Assets\DataImages\a7f351f2-4f64-4371-8.png" />
-          <Content Include="Assets\DataImages\bde35968-8124-46eb-8.png" />
-          <Content Include="Assets\DataImages\Build2015_Satya_Nade-1.jpg" />
-          <Content Include="Assets\DataImages\Build2015_Satya_Nade.jpg" />
-          <Content Include="Assets\DataImages\calendar-5.png" />
-          <Content Include="Assets\DataImages\Captura-1.png" />
-          <Content Include="Assets\DataImages\Captura-2.png" />
-          <Content Include="Assets\DataImages\Captura-3.png" />
-          <Content Include="Assets\DataImages\Captura-4.png" />
-          <Content Include="Assets\DataImages\Captura-5.png" />
-          <Content Include="Assets\DataImages\Captura-6.png" />
-          <Content Include="Assets\DataImages\Captura-7.png" />
-          <Content Include="Assets\DataImages\Captura.png" />
-          <Content Include="Assets\DataImages\channel-2.png" />
-          <Content Include="Assets\DataImages\ChrisAnderson.jpg" />
-          <Content Include="Assets\DataImages\ee4dd63c-cbcc-e411-b.jpg" />
-          <Content Include="Assets\DataImages\fcc1def4-9f84-48d2-b.jpg" />
-          <Content Include="Assets\DataImages\hero_large-16.jpg" />
-          <Content Include="Assets\DataImages\hero_large-17.jpg" />
-          <Content Include="Assets\DataImages\hero_large-4.jpg" />
-          <Content Include="Assets\DataImages\hero_large-5.jpg" />
-          <Content Include="Assets\DataImages\logo-3.png" />
-          <Content Include="Assets\DataImages\map-2.png" />
-          <Content Include="Assets\DataImages\Satya_Nadella.jpg" />
-          <Content Include="Assets\DataImages\__10.jpg" />
-          <Content Include="Assets\DataImages\__12.jpg" />
-    </ItemGroup>
-
+    <Content Include="Layouts\Detail\MulticolumnLayout.json" />
+    <Content Include="Layouts\Detail\TextDetailLayout.json" />
+    <Content Include="Layouts\List\Breakpoints.Large.ContactCard.json" />
+    <Content Include="Layouts\List\Breakpoints.Large.json" />
+    <Content Include="Layouts\List\Breakpoints.Large.ListBigHorizontalCard.json" />
+    <Content Include="Layouts\List\Breakpoints.Large.ListBigHorizontalCardBox.json" />
+    <Content Include="Layouts\List\Breakpoints.Medium.json" />
+    <Content Include="Layouts\List\Breakpoints.Medium.ListBigVerticalCard.json" />
+    <Content Include="Layouts\List\Breakpoints.Medium.ListBigVerticalCardBox.json" />
+    <Content Include="Layouts\List\Breakpoints.Medium.MenuBig.json" />
+    <Content Include="Layouts\List\Breakpoints.Medium.MenuMedium.json" />
+    <Content Include="Layouts\List\Breakpoints.Medium.MenuSmall.json" />
+    <Content Include="Layouts\List\Breakpoints.Medium.MenuText.json" />
+    <Content Include="Layouts\List\Breakpoints.Medium.Photo.json" />
+    <Content Include="Layouts\List\Breakpoints.Medium.ListTextCard.json" />
+    <Content Include="Layouts\List\Breakpoints.ListGrouped.json" />
+    <Content Include="Layouts\List\Breakpoints.Large.ListBigHorizontalCardGroupedHome.json" />
+    <Content Include="Assets\Design\DesignData.json" />
+    <Content Include="Assets\Design\DesignDataHtml.json" />
+    <Content Include="Assets\Design\DesignDataMenu.json" />
+    <Content Include="Assets\Design\DesignDataTD.json" />
+    <Content Include="Assets\Design\DetailDesignData.json" />
+    <Content Include="Assets\Design\DarkGray.png" />
+    <Content Include="Assets\Design\LightGray.png" />
+    <Content Include="Assets\Design\MediumGray.png" />
+    <Content Include="Assets\about.png" />
+    <Content Include="Assets\RelatedContentVBP.json" />
+    <None Include="Package.StoreAssociation.xml" />
+    <Content Include="Properties\Default.rd.xml" />
+    <Content Include="Assets\ApplicationLogo.png" />
+    <Content Include="Assets\SplashScreen.scale-200.png" />
+    <Content Include="Assets\Square150x150Logo.scale-200.png" />
+    <Content Include="Assets\Square310x310Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.scale-200.png" />
+    <Content Include="Assets\Square71x71Logo.scale-200.png" />
+    <Content Include="Assets\StoreLogo.scale-200.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+    <Content Include="Assets\Data\Gallery.json" />
+    <Content Include="Assets\Data\Information.json" />
+    <Content Include="Assets\Data\PressRelease.htm" />
+    <Content Include="Assets\Data\Sessions.json" />
+    <Content Include="Assets\Data\Speakers.json" />
+    <Content Include="Assets\DataImages\02ffabbe-cac8-e411-b.jpg" />
+    <Content Include="Assets\DataImages\1-2.png" />
+    <Content Include="Assets\DataImages\1.jpg" />
+    <Content Include="Assets\DataImages\14.png" />
+    <Content Include="Assets\DataImages\2.jpg" />
+    <Content Include="Assets\DataImages\2.png" />
+    <Content Include="Assets\DataImages\3.jpg" />
+    <Content Include="Assets\DataImages\3.png" />
+    <Content Include="Assets\DataImages\4.png" />
+    <Content Include="Assets\DataImages\41f54bba-b9c9-e411-b.jpg" />
+    <Content Include="Assets\DataImages\5.png" />
+    <Content Include="Assets\DataImages\6.jpg" />
+    <Content Include="Assets\DataImages\7.jpg" />
+    <Content Include="Assets\DataImages\9.jpg" />
+    <Content Include="Assets\DataImages\904dedef-4acb-43bc-b.png" />
+    <Content Include="Assets\DataImages\a7f351f2-4f64-4371-8.png" />
+    <Content Include="Assets\DataImages\bde35968-8124-46eb-8.png" />
+    <Content Include="Assets\DataImages\Build2015_Satya_Nade-1.jpg" />
+    <Content Include="Assets\DataImages\Build2015_Satya_Nade.jpg" />
+    <Content Include="Assets\DataImages\calendar-5.png" />
+    <Content Include="Assets\DataImages\Captura-1.png" />
+    <Content Include="Assets\DataImages\Captura-2.png" />
+    <Content Include="Assets\DataImages\Captura-3.png" />
+    <Content Include="Assets\DataImages\Captura-4.png" />
+    <Content Include="Assets\DataImages\Captura-5.png" />
+    <Content Include="Assets\DataImages\Captura-6.png" />
+    <Content Include="Assets\DataImages\Captura-7.png" />
+    <Content Include="Assets\DataImages\Captura.png" />
+    <Content Include="Assets\DataImages\channel-2.png" />
+    <Content Include="Assets\DataImages\ChrisAnderson.jpg" />
+    <Content Include="Assets\DataImages\ee4dd63c-cbcc-e411-b.jpg" />
+    <Content Include="Assets\DataImages\fcc1def4-9f84-48d2-b.jpg" />
+    <Content Include="Assets\DataImages\hero_large-16.jpg" />
+    <Content Include="Assets\DataImages\hero_large-17.jpg" />
+    <Content Include="Assets\DataImages\hero_large-4.jpg" />
+    <Content Include="Assets\DataImages\hero_large-5.jpg" />
+    <Content Include="Assets\DataImages\logo-3.png" />
+    <Content Include="Assets\DataImages\map-2.png" />
+    <Content Include="Assets\DataImages\Satya_Nadella.jpg" />
+    <Content Include="Assets\DataImages\__10.jpg" />
+    <Content Include="Assets\DataImages\__12.jpg" />
+  </ItemGroup>
   <ItemGroup>
     <PRIResource Include="Strings\Resources.resw" />
   </ItemGroup>
-   <ItemGroup>
+  <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
     <SDKReference Include="WindowsMobile, Version=10.0.10586.0">
       <Name>Windows Mobile Extensions for the UWP</Name>
     </SDKReference>
   </ItemGroup>
-   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
-
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
 </Project>
