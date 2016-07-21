@@ -5,7 +5,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{11F8021A-D313-46FF-9783-038F8F65D51B}</ProjectGuid>
+    <ProjectGuid>{562F6318-59D6-4163-A704-91F8E2B49C3A}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>LearninUWP</RootNamespace>

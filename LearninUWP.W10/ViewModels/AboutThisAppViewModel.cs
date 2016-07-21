@@ -15,11 +15,11 @@ namespace LearninUWP.ViewModels
         {
             this.AppName = "LearninUWP";
             this.Title = "NavigationPaneAbout".StringResource();
-            this.Publisher = "AppStudio";
+            this.Publisher = "Rido Min";
             this.AppVersion = string.Format("{0}.{1}.{2}.{3}", Package.Current.Id.Version.Major, Package.Current.Id.Version.Minor, Package.Current.Id.Version.Build, Package.Current.Id.Version.Revision);
             this.AboutText = "Use this to create an app from scratch.";
             this.AppLogo = new BitmapImage(new Uri("ms-appx:///Assets/ApplicationLogo.png"));
-            this.Privacy = "https://appstudio.windows.com/home/appprivacyterms";
+            this.Privacy = "https://ridophotos.azurewebsites.net/privacy";
             this.WasLibs = "https://github.com/wasteam/waslibs";
             this.WindowsAppStudioWeb = "https://appstudio.windows.com/";
             this.NewtonsoftWeb = "http://www.newtonsoft.com/json";

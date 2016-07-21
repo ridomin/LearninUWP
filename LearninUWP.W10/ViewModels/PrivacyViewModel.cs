@@ -16,7 +16,7 @@ namespace LearninUWP.ViewModels
         {
             get
             {
-                return "https://appstudio.windows.com/home/appprivacyterms";
+                return "https://ridophotos.azurewebsites.net/privacy";
             }
         }
     }
