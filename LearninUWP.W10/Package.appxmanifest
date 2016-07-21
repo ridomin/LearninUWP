@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package
+  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+  xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
+  xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+  IgnorableNamespaces="uap mp">
+			<Identity Name="e25fa89d-1990-47a4-8aaa-3dff84efd00e" Publisher="CN=AppStudio" Version="1.0.0.0" />
+	    <mp:PhoneIdentity PhoneProductId="e25fa89d-1990-47a4-8aaa-3dff84efd00e" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+    <Properties>
+        <DisplayName>AppStudio App</DisplayName>
+        <PublisherDisplayName>AppStudio</PublisherDisplayName>
+        <Logo>Assets\StoreLogo.png</Logo>
+    </Properties>
+    <Dependencies>
+        <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
+    </Dependencies>
+    <Resources>
+        <Resource Language="x-generate"/>
+    </Resources>
+    <Applications>
+        <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="LearninUWP.App">
+            <uap:VisualElements 
+			  DisplayName="LearninUWP"
+              Square150x150Logo="Assets\Square150x150Logo.png"
+              Square44x44Logo="Assets\Square44x44Logo.png"
+              Description="Use this to create an app from scratch."
+              BackgroundColor="#4a5459">
+                <uap:SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="#4a5459"/>
+                <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" Square310x310Logo="Assets\Square310x310Logo.png" Square71x71Logo="Assets\Square71x71Logo.png">
+                    <uap:TileUpdate Recurrence="halfHour" UriTemplate="http://ds.winappstudio.com/api/tile10?config=iwIAAB~LCAAAAAAABACNkkFvgkAQhf/LnNdkVYyWWytNY6KtURMPTQ8LjnTjskuWRSWG/96BBdND2zRcZpiX7808uEFU7KocIRwyKudGH2UK4Q0i4cTGXJaycIsIQuB8Mp2N4~HgYSpGgyAZ4yAWh3jAZ3wieDDjwTQABnOjFCZOGu2pnMGbPaD14NKKZtTwH5Uyl3YE4VGoAjvhUwWhLpXq2khajyNUXTPYYZYr4bBB7KTCV5FRDWvEE7k/WaEPUqetbyQLkladgqYv1pR5AeH7DbZl/K3bo0w/HUXAeeNwdVsnklPPeVaYoXZe2kwbb7rH0UsCt3wGeyvy~yUrqZdSY9GfshLXrqeUydspvGu3rmq6gFEkMtVZS~V06iITKXpCzX5yjrBIrMzbdPoFnC3/9J/85j/8n7/ndSPK0Sa0iG8ZbDAzZ1wJm0rdrzK3Jve/wRktfY62XiuRoHca1fVH~9RfEk5WLIsCAAA="/>
+                    <uap:ShowNameOnTiles>
+                        <uap:ShowOn Tile="square150x150Logo"/>
+						<uap:ShowOn Tile="square310x310Logo" />
+                    </uap:ShowNameOnTiles>
+                </uap:DefaultTile>
+            </uap:VisualElements>
+        </Application>
+    </Applications>
+    <Capabilities>
+        <Capability Name="internetClient" />
+    </Capabilities>
+</Package>

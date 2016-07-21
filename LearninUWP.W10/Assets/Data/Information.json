@@ -1,0 +1,30 @@
+[
+  {
+    "MenuType": "DeepLink",
+    "Title": "April 29 2015 Save de Date",
+    "Icon": "/Assets/DataImages/calendar-5.png",
+    "Target": "http://news.microsoft.com/build2015/",
+    "_id": "5a5d5029-e28f-49d2-bb17-e2d1e2fed286"
+  },
+  {
+    "MenuType": "DeepLink",
+    "Title": "Moscone Center San Francico",
+    "Icon": "/Assets/DataImages/map-2.png",
+    "Target": "https://www.bing.com/mapspreview?&ty=18&q=The%20Moscone%20Center%2c%20San%20Francisco%2c%20CA&satid=",
+    "_id": "e4fbde1a-2dc5-4c6b-9c15-6255b0ffae27"
+  },
+  {
+    "MenuType": "DeepLink",
+    "Title": "Microsoft",
+    "Icon": "/Assets/DataImages/logo-3.png",
+    "Target": "http://www.microsoft.com/",
+    "_id": "da651b9e-d50d-4e93-83a4-0cd06a480056"
+  },
+  {
+    "MenuType": "DeepLink",
+    "Title": "Channel 9 Live Streaming",
+    "Icon": "/Assets/DataImages/channel-2.png",
+    "Target": "https://channel9.msdn.com/Events/Build/2015",
+    "_id": "eac07ce2-a8c4-4397-8329-ec3e0e2a73b1"
+  }
+]
