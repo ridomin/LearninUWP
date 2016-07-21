@@ -1,1 +1,1 @@
-C:\code\LearninUWP\LearninUWP.W10\AppPackages\LearninUWP.W10_1.1.0.0\LearninUWP.W10_1.1.0.0_x86_x64_arm.appxbundle
+C:\code\LearninUWP\LearninUWP.W10\AppPackages\LearninUWP.W10_1.1.1.0\LearninUWP.W10_1.1.1.0_x86_x64_arm.appxbundle
